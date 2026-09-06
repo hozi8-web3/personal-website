@@ -48,9 +48,9 @@ const GitHubHeatmap = () => {
           colorScheme="dark"
           blockSize={blockSize}
           blockMargin={4}
-          // @ts-ignore - undocumented props
+          // @ts-expect-error - undocumented props
           hideColorLegend={hideLabels}
-          // @ts-ignore
+          // @ts-expect-error - undocumented props
           hideMonthLabels={hideLabels}
           theme={{
             light: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
