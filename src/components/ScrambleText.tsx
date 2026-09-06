@@ -13,7 +13,6 @@ const ScrambleText = ({ text, className = '', delay = 0 }: ScrambleTextProps) =>
     const [isScrambling, setIsScrambling] = useState(false);
 
     useEffect(() => {
-        const timeoutId: ReturnType<typeof setTimeout> = setTimeout(scramble, delay);
         let intervalId: ReturnType<typeof setInterval>;
 
         const scramble = () => {
@@ -42,6 +41,7 @@ const ScrambleText = ({ text, className = '', delay = 0 }: ScrambleTextProps) =>
                 iteration += 1 / 3; // Controls speed of settling
             }, 30);
         };
+        const timeoutId: ReturnType<typeof setTimeout> = setTimeout(scramble, delay);
 
         return () => {
             clearTimeout(timeoutId);
