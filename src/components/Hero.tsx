@@ -59,7 +59,7 @@ const Hero = () => {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="text-brand-green font-sans text-xs tracking-[0.2em] uppercase font-medium"
               >
-                <ScrambleText text="Software Engineer" delay={500} />
+                <ScrambleText text="Full-Stack Web Developer" delay={500} />
               </motion.p>
               
               <AvailabilityBadge />
@@ -72,7 +72,7 @@ const Hero = () => {
               >
                 <span className="block glitch-hover w-fit" data-text="Hi, I'm">Hi, I'm</span>
                 <span className="block mt-2 relative z-20">
-                  {"Hozaifa Ali".split('').map((letter, index) => (
+                  {"Muhammad Hozaifa Ali".split('').map((letter, index) => (
                     <motion.span
                       key={index}
                       className="inline-block text-brand-green cursor-grab active:cursor-grabbing relative"
@@ -88,10 +88,19 @@ const Hero = () => {
                   ))}
                 </span>
               </motion.h1>
+
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="text-lg sm:text-xl md:text-2xl font-sans font-semibold text-gray-700 dark:text-gray-200 leading-relaxed max-w-2xl"
+              >
+                Building high-performance, SEO-optimized web experiences with modern frontend and backend technologies.
+              </motion.h2>
             </div>
 
             <TextReveal
-              text="Software Engineering student at UET Lahore, specializing in full-stack development, backend systems, and cross-platform applications. I build scalable, production-ready software with modern tools and best practices."
+              text="I design and ship fast, scalable web products with React, Next.js, TypeScript, Node.js, and Python—focused on clean architecture, strong UX, and measurable performance."
               className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl"
               delay={5}
             />
