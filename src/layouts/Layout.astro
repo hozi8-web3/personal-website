@@ -8,37 +8,33 @@ import '../index.css';
 import { ViewTransitions } from 'astro:transitions';
 
 const siteUrl = 'https://devhozaifa.vercel.app';
-const description = 'Muhmmad Hozaifa Ali — Software Engineer specializing in full-stack development, backend systems, DevOps, and mobile applications. Building scalable ecosystems with React, TypeScript, Rust, C#, and Python.';
+const pageTitle = title.includes('Muhammad Hozaifa Ali') ? title : `${title} | Muhammad Hozaifa Ali`;
+const description = 'Muhammad Hozaifa Ali (Hozaifa) is a full-stack web developer building fast, scalable, SEO-friendly websites and web applications with React, Next.js, TypeScript, and Node.js.';
 const ogImage = `${siteUrl}/hozi.jpeg`;
 
 // Structured Data for Google Knowledge Graph
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Person",
-  "name": "Muhmmad Hozaifa Ali",
-  "alternateName": "Hozaifa Ali",
-  "jobTitle": "Software Engineering Student & Developer",
+  "name": "Muhammad Hozaifa Ali",
+  "alternateName": "Hozaifa",
+  "jobTitle": "Full-Stack Web Developer",
   "url": siteUrl,
   "image": ogImage,
   "sameAs": [
     "https://github.com/hozaifa-ali",
-    "https://pk.linkedin.com/in/m-hozaifa-ali" 
+    "https://www.linkedin.com/in/m-hozaifa-ali"
   ],
   "knowsAbout": [
-    "Software Engineering",
-    "Full-Stack Development",
-    "DevOps",
+    "Web Development",
+    "Full-Stack Web Development",
+    "Technical SEO",
     "TypeScript",
-    "Rust",
-    "C#",
     "React",
-    "Python",
-    "Backend Systems"
-  ],
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Lahore, Pakistan"
-  }
+    "Next.js",
+    "Node.js",
+    "API Development"
+  ]
 };
 ---
 
@@ -57,11 +53,11 @@ const schema = {
 		<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 
 		<!-- Primary Meta Tags -->
-		<title>{title} | Muhmmad Hozaifa Ali</title>
-		<meta name="title" content={`${title} | Muhmmad Hozaifa Ali`} />
+		<title>{pageTitle}</title>
+		<meta name="title" content={pageTitle} />
 		<meta name="description" content={description} />
-		<meta name="author" content="Muhmmad Hozaifa Ali" />
-		<meta name="keywords" content="Muhmmad Hozaifa Ali, Hozaifa Ali, Software Engineer, Backend Developer, DevOps, Full Stack Developer, React, Next.js, TypeScript, Rust, C#, Python, DevPocket, ObjectiveAI" />
+		<meta name="author" content="Muhammad Hozaifa Ali" />
+		<meta name="keywords" content="Muhammad Hozaifa Ali, Hozaifa, Full-Stack Web Developer, Web Developer, React Developer, Next.js, TypeScript, Node.js, JavaScript, Portfolio" />
 		<link rel="canonical" href={siteUrl} />
 
 		<!-- Favicon -->
@@ -70,15 +66,15 @@ const schema = {
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={siteUrl} />
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
-		<meta property="og:site_name" content="Hozaifa Ali Portfolio" />
+		<meta property="og:site_name" content="Muhammad Hozaifa Ali Portfolio" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={siteUrl} />
-		<meta property="twitter:title" content={title} />
+		<meta property="twitter:title" content={pageTitle} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={ogImage} />
 

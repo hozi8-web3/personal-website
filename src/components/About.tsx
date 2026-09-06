@@ -64,10 +64,7 @@ const About = () => {
             <div className="h-1 flex-1 max-w-24 bg-gray-900 dark:bg-emerald-500" />
           </div>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-4xl leading-relaxed">
-            I'm Hozaifa Ali, a Software Engineering student at UET Lahore with a passion for building
-            scalable software. My expertise spans full-stack development, backend systems, DevOps, and
-            cross-platform mobile development with Flutter. I enjoy solving complex problems
-            and shipping clean, production-ready applications.
+            Muhammad Hozaifa Ali is a full-stack web developer focused on building high-performance, user-friendly digital products. Hozaifa works with JavaScript, TypeScript, React, Next.js, Node.js, Python, and Solidity to create modern web platforms and scalable applications. Muhammad Hozaifa Ali combines clean frontend experiences with backend architecture, API integration, and DevOps workflows using Docker, Linux, and GitHub Actions. As a software engineering student, Hozaifa continues growing in backend systems, Web3, and cloud development while shipping production-ready projects. Through this portfolio, Muhammad Hozaifa Ali highlights reliable engineering, strong problem-solving, and SEO-conscious implementation for businesses and collaborators seeking impactful web solutions.
           </p>
         </motion.div>
 
